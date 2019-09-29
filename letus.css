@@ -9,7 +9,7 @@ body{
 .container_second{
     max-width: 1350px;
     height: 500px;
-    background-image: url(/img/header-bg.png);
+    background-image: url(./img/header-bg.png);
     background-size: cover
 }
 h1{
