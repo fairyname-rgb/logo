@@ -23,10 +23,12 @@ $(function(){
     <title>Document</title>
 </head>
 <body>
-<div class="firstcontainer" style="display: flex; justify-content: space-between; height: 100px; max-width: 1200px;">
-    <a class="navbar-brand " style="color: #4c4c4c;font-family: 'Gotham Pro Regular'; padding-left: 150px; arial; font-size: 30px; padding-top: 20px;" href="#">LOGO</a>
+<div class="container-fluid" style="display: flex; justify-content: space-between; height: 100px; max-width: 1200px;">
+    <a class="navbar-brand " style="color: #4c4c4c;font-family: 'Gotham Pro Regular'; padding-left: 150px; arial; font-size: 30px; padding-top: 20px;" href="#" id="header_log">LOGO</a>
     <nav class="navbar navbar-expand-lg text-right" id="nav_cont">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <label  for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <div class="menu">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link disabled" href="#works_section">
@@ -44,7 +46,7 @@ $(function(){
           
         </div>
 </div> 
-<div class="container_second" >
+<div class="container-fluid" id="container_second">
     <div class="text-center" style="padding-top: 170px;">
     <h1>LET US MAKE <br>
     YOUR LIVES EASIER
@@ -58,33 +60,34 @@ $(function(){
         just click the thumbnails below.</p>
         <div class="works-section" id="works_section">
 <div>
-<img src="./img/pillter-1.png" alt="">
+<img src="/img/pillter-1.png" alt="">
     </div>
     <div>
-            <img src="./img/touch.png" alt="">
+            <img src="/img/touch.png" alt="">
         </div>
         <div>
-                <img src="./img/locate.png" alt="">
+                <img src="/img/locate.png" alt="">
             </div>
             <div>
-                    <img src="./img/umberapp.png" alt="">
+                    <img src="/img/umberapp.png" alt="">
                 </div>
                 <div>
-                        <img src="./img/hipo.png" alt="">
+                        <img src="/img/hipo.png" alt="">
                     </div>
                     <div>
-                            <img src="./img/pardio.png" alt="">
+                            <img src="/img/pardio.png" alt="">
                         </div>
                         <div>
-                                <img src="./img/banad.png" alt="">
+                                <img src="/img/banad.png" alt="">
                             </div>
                             <div>
-                                    <img src="./img/biz.png" alt="">
+                                    <img src="/img/biz.png" alt="">
                                 </div>
                                 <div>
-                                        <img src="./img/arabul.png" alt="">
+                                        <img src="/img/arabul.png" alt="">
                                     </div>
                                 <div>
+  <img src="" alt="">
 </div>
    </div>
 <div class="container-fluid" style="background-color: #f3f3f3; padding-bottom: 80px; padding-top: 50px;" id="team_section">
@@ -94,7 +97,7 @@ $(function(){
         the web to create custom talierd niche websites.</p>
         <div class="team_sec">
         <div class="card" style="max-width: 212px;">
-        <img src="./img/leaddev.png" alt="">
+        <img src="/img/leaddev.png" alt="">
         <h4>NAME SURNAME</h4>
         <p>Lead Developer</p>
         <div style="display: flex;justify-content: center">
@@ -103,7 +106,7 @@ $(function(){
         </div>
     </div>
         <div class="card" style="max-width: 212px;">
-            <img src="./img/leaddes.png" class="mt-3" alt="">
+            <img src="/img/leaddes.png" class="mt-3" alt="">
             <h4>NAME SURNAME</h4>
             <p>Lead Designer</p>
             <div style="display: flex; justify-content: center">
@@ -113,7 +116,7 @@ $(function(){
             
         </div>
         <div class="card" style="max-width: 212px;">
-            <img src="./img/mardir.png" alt="">
+            <img src="/img/mardir.png" alt="">
             <h4>NAME SURNAME</h4>
             <p>Marketing Director</p>
 <div style="display: flex; justify-content: center">
@@ -123,7 +126,7 @@ $(function(){
 </div>
         </div>
         <div class="card" style="max-width: 212px;">
-            <img src="./img/busdir.png" alt="">
+            <img src="/img/busdir.png" alt="">
             <h4>NAME SURNAME</h4>
             <p>Business Director</p>
             <div style="display: flex; justify-content: center">
@@ -147,7 +150,7 @@ $(function(){
                 <div class="col-12" id="form_first">
                        <p style="padding-bottom: 25px;">Want to contact us now? Just drop us a line below.</p> 
                         <div class="form-group">
-                          <input type="text" style="height: 250px; width: 525px; background-color: #f2f2f2;border: none;">
+                          <input type="text" class="main-form">
                         </div>
                         <div class=d-flex>
                         <input type="text" style= "width: 350px; background-color: #f2f2f2; height: 60px; border: none; margin-right: 20px; font-family: Georgia, Times, Times New Roman, serif; font-style: italic; color: #6e6e6e">
