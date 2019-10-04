@@ -1,16 +1,17 @@
 body{
     font-size: 16px;
-    font-family: 'Gotham Pro Regular'
+    font-family: 'Gotham Pro Regular';
+    box-sizing: border-box
 }
 .nav-item{
     padding-right: 100px;
     margin: 0 auto;
 }
-.container_second{
-    max-width: 1350px;
+#container_second{
+    width: 100%;
     height: 500px;
-    background-image: url(./img/header-bg.png);
-    background-size: cover
+    background-image: url(/img/header-bg.png);
+    background-size: cover;
 }
 h1{
     margin: auto auto;
@@ -33,6 +34,9 @@ height: 90px;
 width: 90px;
 margin: auto
 
+}
+.card{
+  margin-bottom: 30px;
 }
 #team_text{
     margin-bottom: 60px;
@@ -70,38 +74,78 @@ padding-bottom: 20px;
   #b-button:hover{
     background-color: #4e6e7c;
   }
-
-  @media (max-width: 575.98px) {
-  
-    #contatti{padding-bottom: 800px;}
-    #contatti .maps iframe{
-      width: 100%;
-      height: 320px;
-    }
-   }
-  
-  
-  @media (min-width: 576px) {
-  
-     #contatti{padding-bottom: 800px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 310px;
-     }
-   }
-  
-  @media (min-width: 768px) {
-  
-    #contatti{padding-bottom: 350px;}
-  
-    #contatti .maps iframe{
-      width: 100%;
-      height: 310px;
-    }
+  label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
   }
-  
-  @media (min-width: 992px) {
+  #toggle{
+    display: none;
+  }
+  .main-form{
+    height: 250px; 
+    width: 525px; 
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .works-section{
+      display: grid;
+      grid-template-columns: 1fr;}
+      h1{
+        font-size: 30px;
+      
+      }
+      .works-section{
+        margin-left: 75px;
+      }
+      .container_second p{
+        text-align: left
+      }
+      .team_sec{
+        display: grid;
+        grid-template-columns: auto;
+  }
+  .card{
+    margin-bottom: 50px;
+  }
+  label{
+    display: block;
+    cursor: pointer;  
+  }
+  .menu{
+    text-align: center;
+    display: none;
+  }
+  .menu a{
+    clear: right;
+    margin: 0 10px;
+    line-height: 70px;
+    display: inline;
+  }
+  .menu a li{
+    display: inline-block;
+  }
+  #toggle:checked + .menu{
+    display: block;
+  }
+}
+
+  @media screen and (min-width: 768px) and (max-width: 991.98px) { 
+    .team_sec{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+.works-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+   }
+
+ 
+   @media (min-width: 992px) and (max-width: 1199.98px) {
     #contatti{padding-bottom: 200px;}
   
      #contatti .maps iframe{
@@ -109,7 +153,6 @@ padding-bottom: 20px;
        height: 310px;
      }
   }
-  
   
   #author a{
     color: #fff;
