@@ -10,7 +10,7 @@ body{
 #container_second{
     width: 100%;
     height: 500px;
-    background-image: url(/img/header-bg.png);
+    background-image: url(./img/header-bg.png);
     background-size: cover;
 }
 h1{
