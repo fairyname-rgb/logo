@@ -3,6 +3,9 @@ body{
     font-family: 'Gotham Pro Regular';
     box-sizing: border-box
 }
+.a{
+    text-decoration:none !important;
+}
 .nav-item{
     padding-right: 100px;
     margin: 0 auto;
